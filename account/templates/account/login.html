@@ -6,7 +6,7 @@
     <h1>
         Log-in
     </h1>
-    <p> Please use the following form to Log-in:</p>
+    <p> Please use the following form to Log-in. If you don't have an account Please <a href="{% url 'register' %}">Register</a></p>
     <form action="." method="POST">
         {{ form.as_p }}
         {% csrf_token %}
